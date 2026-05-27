@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Google AI Studio App</title>
+    <!-- Safe circular reference stringify polyfill to avoid platform logging crashes -->
+    <script>
+      (function() {
+        const _stringify = JSON.stringify;
+        JSON.stringify = function(value, replacer, space) {
+          const seen = new WeakSet();
+          return _stringify(value, function(key, val) {
+            if (typeof val === 'object' && val !== null) {
+              if (seen.has(val)) {
+                return '[Circular]';
+              }
+              seen.add(val);
+            }
+            if (replacer) {
+              return replacer.apply(this, arguments);
+            }
+            return val;
+          }, space);
+        };
+      })();
+    </script>
+    <!-- Pixel UTMify -->
+    <script>
+      window.pixelId = "6a16f5eadbf4989836b88910";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(a);
+    </script>
+    <!-- Script UTMify UTMS -->
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-subids
+      async
+      defer
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
