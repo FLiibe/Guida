@@ -1,7 +1,7 @@
 import { Module, Testimonial, DigitalIdea, Category, PromptItem, CoverStyle, FAQItem } from './types';
 
 // Sostituisci questo link con il tuo checkout di Hotmart reale una volta pronto!
-export const HOTMART_CHECKOUT_URL = "https://pay.hotmart.com/V106020422J";
+export const HOTMART_CHECKOUT_URL = "https://pay.hotmart.com/V106020422J?off=8pt9x3ew&checkoutMode=10";
 
 export const modulesData: Module[] = [
   {
