@@ -173,7 +173,7 @@ export default function ModulesExplorer({ onOpenCheckout }: ModulesExplorerProps
             {/* Real portrait photo of Alice */}
             <div className="w-full h-full rounded-2xl overflow-hidden relative group">
               <img
-                src="https://i.ibb.co/Dfwk3cmD/Chat-GPT-Image-27-de-mai-de-2026-12-16-09.png"
+                src="https://i.ibb.co/FLVjDmp9/Chat-GPT-Image-28-mag-2026-17-41-07.png"
                 alt="Alice Bianchi Portrait"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
