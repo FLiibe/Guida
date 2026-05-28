@@ -81,9 +81,6 @@ export default function ModulesExplorer({ onOpenCheckout }: ModulesExplorerProps
                   </div>
                   
                   <div className="flex items-center gap-3">
-                    <span className="hidden sm:inline-block font-mono text-[10px] text-stone-400 font-bold bg-stone-100 border border-stone-200 px-2 py-0.5 rounded uppercase leading-none">
-                      DA PAG. {mod.page}
-                    </span>
                     <motion.div
                       animate={{ rotate: isExpanded ? 180 : 0 }}
                       transition={{ duration: 0.2 }}

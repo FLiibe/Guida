@@ -1,6 +1,6 @@
 {
-  "name": "Remix: Da Zero ai Prodotti Digitali",
-  "description": "Una landing page elegante e persuasiva per il bundle prodotto di Alice Bianchi, con moduli interattivi, testimonianze e checkout simulato.",
+  "name": "Da Zero ai Prodotti Digitali",
+  "description": "Una landing page elegante e persuasiva per il bundle prodotto di Alice Bianchi, con moduli interattivi, testimonianze reali e reindirizzamento al checkout sicuro Hotmart.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
